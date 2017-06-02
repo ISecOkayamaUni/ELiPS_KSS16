@@ -1,0 +1,39 @@
+
+SUBDIRS = src
+
+AM_CPPFLAGS = -I../include
+
+library_includedir = $(includedir)/ELiPS_KSS16
+library_include_HEADERS = include/ELiPS_KSS16/Common_Headers.h\
+include/ELiPS_KSS16/ELiPS_EFp.h\
+include/ELiPS_KSS16/ELiPS_EFp16.h\
+include/ELiPS_KSS16/ELiPS_EFp2.h\
+include/ELiPS_KSS16/ELiPS_EFp4.h\
+include/ELiPS_KSS16/ELiPS_EFp8.h\
+include/ELiPS_KSS16/ELiPS_Fp.h\
+include/ELiPS_KSS16/ELiPS_Fp16.h\
+include/ELiPS_KSS16/ELiPS_Fp2.h\
+include/ELiPS_KSS16/ELiPS_Fp4.h\
+include/ELiPS_KSS16/ELiPS_Fp8.h\
+include/ELiPS_KSS16/ELiPS_KSS16_Ate_Pairing.h\
+include/ELiPS_KSS16/ELiPS_KSS16_Final_Exp.h\
+include/ELiPS_KSS16/ELiPS_KSS16_Init.h\
+include/ELiPS_KSS16/ELiPS_KSS16_Line_Evaluation.h\
+include/ELiPS_KSS16/ELiPS_KSS16_Millers_Algo.h\
+include/ELiPS_KSS16/ELiPS_KSS16_Opt_Ate.h\
+include/ELiPS_KSS16/ELiPS_KSS16_Optimal_Millers_Algo.h\
+include/ELiPS_KSS16/ELiPS_KSS16_Pairings_Test.h\
+include/ELiPS_KSS16/ELiPS_KSS16_Params.h\
+include/ELiPS_KSS16/ELiPS_KSS16_PS_Ate.h\
+include/ELiPS_KSS16/ELiPS_KSS16_PS_Line_Calc.h\
+include/ELiPS_KSS16/ELiPS_KSS16_PS_Miller.h\
+include/ELiPS_KSS16/ELiPS_KSS16_PS_Opt_Ate.h\
+include/ELiPS_KSS16/ELiPS_KSS16_PS_Opt_Miller.h\
+include/ELiPS_KSS16/ELiPS_KSS16_Settings.h\
+include/ELiPS_KSS16/ELiPS_KSS16_Sparse_Ate.h\
+include/ELiPS_KSS16/ELiPS_KSS16_Sparse_Line_Calc.h\
+include/ELiPS_KSS16/ELiPS_KSS16_Sparse_Miller.h\
+include/ELiPS_KSS16/ELiPS_KSS16_Sparse_Opt_Ate.h\
+include/ELiPS_KSS16/ELiPS_KSS16_Sparse_Opt_Miller.h\
+include/ELiPS_KSS16/ELiPS_KSS16_Tate_Pairing.h\
+include/ELiPS_KSS16/KSS16_Sparse7_Opt_Miller.h
