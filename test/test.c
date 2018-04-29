@@ -19,9 +19,9 @@ int main(int argc, const char * argv[]) {
     
     check_pairing_correctness();
     
-//    struct Fp A, B;
-//    Fp_init(&A);
-//    Fp_init(&B);
+    struct Fp A, B;
+    Fp_init(&A);
+    Fp_init(&B);
 //    
 //    Fp_random(&A);
 //    Fp_random(&B);

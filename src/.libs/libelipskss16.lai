@@ -5,19 +5,19 @@
 # It is necessary for linking the library.
 
 # The name that we can dlopen(3).
-dlname='libelipskss16.so.0'
+dlname='libelipskss16.0.dylib'
 
 # Names of this library.
-library_names='libelipskss16.so.0.0.0 libelipskss16.so.0 libelipskss16.so'
+library_names='libelipskss16.0.dylib libelipskss16.dylib'
 
 # The name of the static archive.
 old_library='libelipskss16.a'
 
 # Linker flags that cannot go in dependency_libs.
-inherited_linker_flags=''
+inherited_linker_flags=' '
 
 # Libraries that this one depends upon.
-dependency_libs=' -lgmp'
+dependency_libs=' /usr/local/lib/libgmp.la'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''
