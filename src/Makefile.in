@@ -130,22 +130,22 @@ am__uninstall_files_from_dir = { \
   }
 am__installdirs = "$(DESTDIR)$(libdir)"
 LTLIBRARIES = $(lib_LTLIBRARIES)
-libelipskss16_la_LIBADD =
-am_libelipskss16_la_OBJECTS = ELiPS_EFp.lo ELiPS_EFp16.lo \
-	ELiPS_EFp2.lo ELiPS_EFp4.lo ELiPS_EFp8.lo ELiPS_Fp.lo \
-	ELiPS_Fp16.lo ELiPS_Fp2.lo ELiPS_Fp4.lo ELiPS_Fp8.lo \
-	ELiPS_KSS16_Ate_Pairing.lo ELiPS_KSS16_Final_Exp.lo \
-	ELiPS_KSS16_Find_Params.lo ELiPS_KSS16_init.lo \
-	ELiPS_KSS16_Line_evaluation.lo ELiPS_KSS16_Millers_Algo.lo \
-	ELiPS_KSS16_Opt_Ate.lo ELiPS_KSS16_Opt_Miller.lo \
-	ELiPS_KSS16_PS_Ate.lo ELiPS_KSS16_PS_Line_Calc.lo \
-	ELiPS_KSS16_PS_Miller.lo ELiPS_KSS16_PS_Opt_Ate.lo \
-	ELiPS_KSS16_PS_Opt_Miller.lo ELiPS_KSS16_Settings.lo \
-	ELiPS_KSS16_Sparse_Ate.lo ELiPS_KSS16_Sparse_Line_Calc.lo \
-	ELiPS_KSS16_Sparse_Miller.lo ELiPS_KSS16_Sparse_Opt_Ate.lo \
-	ELiPS_KSS16_Sparse_Opt_Miller.lo ELiPS_KSS16_Tate_Pairing.lo \
-	ELiPS_KSS16_Test_Pairings.lo
-libelipskss16_la_OBJECTS = $(am_libelipskss16_la_OBJECTS)
+libelipsbnbls12_la_LIBADD =
+am_libelipsbnbls12_la_OBJECTS = bls12_G3_exp.lo bls12_finalexp.lo \
+	bls12_frobenius.lo bls12_generate_points.lo bls12_inits.lo \
+	bls12_line_ate.lo bls12_line_tate.lo bls12_miller_ate.lo \
+	bls12_miller_optate.lo bls12_miller_tate.lo bls12_p8sparse.lo \
+	bls12_pairings.lo bls12_scm.lo bls12_skew_frobenius.lo \
+	bls12_test_pairings.lo bls12_timeprint.lo bls12_twist.lo \
+	bn_bls12_precoms.lo bn_clears.lo bn_efp.lo bn_efp12.lo \
+	bn_efp2.lo bn_efp6.lo bn_final_exp.lo bn_fp.lo bn_fp12.lo \
+	bn_fp2.lo bn_fp6.lo bn_frobenius.lo bn_generate_points.lo \
+	bn_inits.lo bn_line_ate.lo bn_line_tate.lo bn_miller_ate.lo \
+	bn_miller_optate.lo bn_miller_tate.lo bn_miller_xate.lo \
+	bn_p8sparse.lo bn_pairing_test.lo bn_pairings.lo bn_prints.lo \
+	bn_skew_frobenius.lo bn_twist.lo bn_utils.lo curve_settings.lo \
+	fp4.lo fp8.lo
+libelipsbnbls12_la_OBJECTS = $(am_libelipsbnbls12_la_OBJECTS)
 AM_V_lt = $(am__v_lt_@AM_V@)
 am__v_lt_ = $(am__v_lt_@AM_DEFAULT_V@)
 am__v_lt_0 = --silent
@@ -184,8 +184,8 @@ AM_V_CCLD = $(am__v_CCLD_@AM_V@)
 am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
 am__v_CCLD_0 = @echo "  CCLD    " $@;
 am__v_CCLD_1 = 
-SOURCES = $(libelipskss16_la_SOURCES)
-DIST_SOURCES = $(libelipskss16_la_SOURCES)
+SOURCES = $(libelipsbnbls12_la_SOURCES)
+DIST_SOURCES = $(libelipsbnbls12_la_SOURCES)
 am__can_run_installinfo = \
   case $$AM_UPDATE_INFO_DIR in \
     n|no|NO) false;; \
@@ -332,72 +332,105 @@ target_alias = @target_alias@
 top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
-lib_LTLIBRARIES = libelipskss16.la
+lib_LTLIBRARIES = libelipsbnbls12.la
 AM_CPPFLAGS = -I../include
-libelipskss16_la_SOURCES = ELiPS_EFp.c\
-ELiPS_EFp16.c\
-ELiPS_EFp2.c\
-ELiPS_EFp4.c\
-ELiPS_EFp8.c\
-ELiPS_Fp.c\
-ELiPS_Fp16.c\
-ELiPS_Fp2.c\
-ELiPS_Fp4.c\
-ELiPS_Fp8.c\
-ELiPS_KSS16_Ate_Pairing.c\
-ELiPS_KSS16_Final_Exp.c\
-ELiPS_KSS16_Find_Params.c\
-ELiPS_KSS16_init.c\
-ELiPS_KSS16_Line_evaluation.c\
-ELiPS_KSS16_Millers_Algo.c\
-ELiPS_KSS16_Opt_Ate.c\
-ELiPS_KSS16_Opt_Miller.c\
-ELiPS_KSS16_PS_Ate.c\
-ELiPS_KSS16_PS_Line_Calc.c\
-ELiPS_KSS16_PS_Miller.c\
-ELiPS_KSS16_PS_Opt_Ate.c\
-ELiPS_KSS16_PS_Opt_Miller.c\
-ELiPS_KSS16_Settings.c\
-ELiPS_KSS16_Sparse_Ate.c\
-ELiPS_KSS16_Sparse_Line_Calc.c\
-ELiPS_KSS16_Sparse_Miller.c\
-ELiPS_KSS16_Sparse_Opt_Ate.c\
-ELiPS_KSS16_Sparse_Opt_Miller.c\
-ELiPS_KSS16_Tate_Pairing.c\
-ELiPS_KSS16_Test_Pairings.c\
-../include/ELiPS_KSS16/Common_Headers.h\
-../include/ELiPS_KSS16/ELiPS_EFp.h\
-../include/ELiPS_KSS16/ELiPS_EFp16.h\
-../include/ELiPS_KSS16/ELiPS_EFp2.h\
-../include/ELiPS_KSS16/ELiPS_EFp4.h\
-../include/ELiPS_KSS16/ELiPS_EFp8.h\
-../include/ELiPS_KSS16/ELiPS_Fp.h\
-../include/ELiPS_KSS16/ELiPS_Fp16.h\
-../include/ELiPS_KSS16/ELiPS_Fp2.h\
-../include/ELiPS_KSS16/ELiPS_Fp4.h\
-../include/ELiPS_KSS16/ELiPS_Fp8.h\
-../include/ELiPS_KSS16/ELiPS_KSS16_Ate_Pairing.h\
-../include/ELiPS_KSS16/ELiPS_KSS16_Final_Exp.h\
-../include/ELiPS_KSS16/ELiPS_KSS16_Init.h\
-../include/ELiPS_KSS16/ELiPS_KSS16_Line_Evaluation.h\
-../include/ELiPS_KSS16/ELiPS_KSS16_Millers_Algo.h\
-../include/ELiPS_KSS16/ELiPS_KSS16_Opt_Ate.h\
-../include/ELiPS_KSS16/ELiPS_KSS16_Optimal_Millers_Algo.h\
-../include/ELiPS_KSS16/ELiPS_KSS16_Pairings_Test.h\
-../include/ELiPS_KSS16/ELiPS_KSS16_Params.h\
-../include/ELiPS_KSS16/ELiPS_KSS16_PS_Ate.h\
-../include/ELiPS_KSS16/ELiPS_KSS16_PS_Line_Calc.h\
-../include/ELiPS_KSS16/ELiPS_KSS16_PS_Miller.h\
-../include/ELiPS_KSS16/ELiPS_KSS16_PS_Opt_Ate.h\
-../include/ELiPS_KSS16/ELiPS_KSS16_PS_Opt_Miller.h\
-../include/ELiPS_KSS16/ELiPS_KSS16_Settings.h\
-../include/ELiPS_KSS16/ELiPS_KSS16_Sparse_Ate.h\
-../include/ELiPS_KSS16/ELiPS_KSS16_Sparse_Line_Calc.h\
-../include/ELiPS_KSS16/ELiPS_KSS16_Sparse_Miller.h\
-../include/ELiPS_KSS16/ELiPS_KSS16_Sparse_Opt_Ate.h\
-../include/ELiPS_KSS16/ELiPS_KSS16_Sparse_Opt_Miller.h\
-../include/ELiPS_KSS16/ELiPS_KSS16_Tate_Pairing.h\
-../include/ELiPS_KSS16/KSS16_Sparse7_Opt_Miller.h
+libelipsbnbls12_la_SOURCES = bls12_G3_exp.c\
+bls12_finalexp.c\
+bls12_frobenius.c\
+bls12_generate_points.c\
+bls12_inits.c\
+bls12_line_ate.c\
+bls12_line_tate.c\
+bls12_miller_ate.c\
+bls12_miller_optate.c\
+bls12_miller_tate.c\
+bls12_p8sparse.c\
+bls12_pairings.c\
+bls12_scm.c\
+bls12_skew_frobenius.c\
+bls12_test_pairings.c\
+bls12_timeprint.c\
+bls12_twist.c\
+bn_bls12_precoms.c\
+bn_clears.c\
+bn_efp.c\
+bn_efp12.c\
+bn_efp2.c\
+bn_efp6.c\
+bn_final_exp.c\
+bn_fp.c\
+bn_fp12.c\
+bn_fp2.c\
+bn_fp6.c\
+bn_frobenius.c\
+bn_generate_points.c\
+bn_inits.c\
+bn_line_ate.c\
+bn_line_tate.c\
+bn_miller_ate.c\
+bn_miller_optate.c\
+bn_miller_tate.c\
+bn_miller_xate.c\
+bn_p8sparse.c\
+bn_pairing_test.c\
+bn_pairings.c\
+bn_prints.c\
+bn_skew_frobenius.c\
+bn_twist.c\
+bn_utils.c\
+curve_settings.c\
+fp4.c\
+fp8.c\
+../include/ELiPS_bn_bls/Commont_headers.h\
+../include/ELiPS_bn_bls/bls12_G3_exp.h\
+../include/ELiPS_bn_bls/bls12_finalexp.h\
+../include/ELiPS_bn_bls/bls12_frobenius.h\
+../include/ELiPS_bn_bls/bls12_generate_points.h\
+../include/ELiPS_bn_bls/bls12_inits.h\
+../include/ELiPS_bn_bls/bls12_line_ate.h\
+../include/ELiPS_bn_bls/bls12_line_tate.h\
+../include/ELiPS_bn_bls/bls12_miller_ate.h\
+../include/ELiPS_bn_bls/bls12_miller_optate.h\
+../include/ELiPS_bn_bls/bls12_miller_tate.h\
+../include/ELiPS_bn_bls/bls12_p8sparse.h\
+../include/ELiPS_bn_bls/bls12_pairings.h\
+../include/ELiPS_bn_bls/bls12_scm.h\
+../include/ELiPS_bn_bls/bls12_skew_frobenius.h\
+../include/ELiPS_bn_bls/bls12_test_pairings.h\
+../include/ELiPS_bn_bls/bls12_timeprint.h\
+../include/ELiPS_bn_bls/bls12_twist.h\
+../include/ELiPS_bn_bls/bn_bls12_precoms.h\
+../include/ELiPS_bn_bls/bn_clears.h\
+../include/ELiPS_bn_bls/bn_efp.h\
+../include/ELiPS_bn_bls/bn_efp12.h\
+../include/ELiPS_bn_bls/bn_efp2.h\
+../include/ELiPS_bn_bls/bn_efp6.h\
+../include/ELiPS_bn_bls/bn_final_exp.h\
+../include/ELiPS_bn_bls/bn_fp.h\
+../include/ELiPS_bn_bls/bn_fp12.h\
+../include/ELiPS_bn_bls/bn_fp2.h\
+../include/ELiPS_bn_bls/bn_fp6.h\
+../include/ELiPS_bn_bls/bn_frobenius.h\
+../include/ELiPS_bn_bls/bn_generate_points.h\
+../include/ELiPS_bn_bls/bn_inits.h\
+../include/ELiPS_bn_bls/bn_line_ate.h\
+../include/ELiPS_bn_bls/bn_line_tate.h\
+../include/ELiPS_bn_bls/bn_miller_ate.h\
+../include/ELiPS_bn_bls/bn_miller_optate.h\
+../include/ELiPS_bn_bls/bn_miller_tate.h\
+../include/ELiPS_bn_bls/bn_miller_xate.h\
+../include/ELiPS_bn_bls/bn_p8sparse.h\
+../include/ELiPS_bn_bls/bn_pairing_test.h\
+../include/ELiPS_bn_bls/bn_pairings.h\
+../include/ELiPS_bn_bls/bn_prints.h\
+../include/ELiPS_bn_bls/bn_skew_frobenius.h\
+../include/ELiPS_bn_bls/bn_twist.h\
+../include/ELiPS_bn_bls/bn_utils.h\
+../include/ELiPS_bn_bls/curve_dtypes.h\
+../include/ELiPS_bn_bls/curve_settings.h\
+../include/ELiPS_bn_bls/field_dtype.h\
+../include/ELiPS_bn_bls/fp4.h\
+../include/ELiPS_bn_bls/fp8.h
 
 all: all-am
 
@@ -468,8 +501,8 @@ clean-libLTLIBRARIES:
 	  rm -f $${locs}; \
 	}
 
-libelipskss16.la: $(libelipskss16_la_OBJECTS) $(libelipskss16_la_DEPENDENCIES) $(EXTRA_libelipskss16_la_DEPENDENCIES) 
-	$(AM_V_CCLD)$(LINK) -rpath $(libdir) $(libelipskss16_la_OBJECTS) $(libelipskss16_la_LIBADD) $(LIBS)
+libelipsbnbls12.la: $(libelipsbnbls12_la_OBJECTS) $(libelipsbnbls12_la_DEPENDENCIES) $(EXTRA_libelipsbnbls12_la_DEPENDENCIES) 
+	$(AM_V_CCLD)$(LINK) -rpath $(libdir) $(libelipsbnbls12_la_OBJECTS) $(libelipsbnbls12_la_LIBADD) $(LIBS)
 
 mostlyclean-compile:
 	-rm -f *.$(OBJEXT)
@@ -477,37 +510,53 @@ mostlyclean-compile:
 distclean-compile:
 	-rm -f *.tab.c
 
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_EFp.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_EFp16.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_EFp2.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_EFp4.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_EFp8.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_Fp.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_Fp16.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_Fp2.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_Fp4.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_Fp8.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_KSS16_Ate_Pairing.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_KSS16_Final_Exp.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_KSS16_Find_Params.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_KSS16_Line_evaluation.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_KSS16_Millers_Algo.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_KSS16_Opt_Ate.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_KSS16_Opt_Miller.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_KSS16_PS_Ate.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_KSS16_PS_Line_Calc.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_KSS16_PS_Miller.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_KSS16_PS_Opt_Ate.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_KSS16_PS_Opt_Miller.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_KSS16_Settings.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_KSS16_Sparse_Ate.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_KSS16_Sparse_Line_Calc.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_KSS16_Sparse_Miller.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_KSS16_Sparse_Opt_Ate.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_KSS16_Sparse_Opt_Miller.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_KSS16_Tate_Pairing.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_KSS16_Test_Pairings.Plo@am__quote@
-@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/ELiPS_KSS16_init.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bls12_G3_exp.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bls12_finalexp.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bls12_frobenius.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bls12_generate_points.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bls12_inits.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bls12_line_ate.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bls12_line_tate.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bls12_miller_ate.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bls12_miller_optate.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bls12_miller_tate.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bls12_p8sparse.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bls12_pairings.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bls12_scm.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bls12_skew_frobenius.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bls12_test_pairings.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bls12_timeprint.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bls12_twist.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_bls12_precoms.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_clears.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_efp.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_efp12.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_efp2.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_efp6.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_final_exp.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_fp.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_fp12.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_fp2.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_fp6.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_frobenius.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_generate_points.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_inits.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_line_ate.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_line_tate.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_miller_ate.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_miller_optate.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_miller_tate.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_miller_xate.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_p8sparse.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_pairing_test.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_pairings.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_prints.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_skew_frobenius.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_twist.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/bn_utils.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/curve_settings.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/fp4.Plo@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/fp8.Plo@am__quote@
 
 .c.o:
 @am__fastdepCC_TRUE@	$(AM_V_CC)depbase=`echo $@ | sed 's|[^/]*$$|$(DEPDIR)/&|;s|\.o$$||'`;\

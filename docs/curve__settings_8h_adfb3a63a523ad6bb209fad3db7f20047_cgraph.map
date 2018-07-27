@@ -1,0 +1,9 @@
+<map id="init_bls12_settings" name="init_bls12_settings">
+<area shape="rect" id="node3" href="$curve__settings_8h.html#ad19981ec357b6c465cbd768f89b6d42e" title="bls12_generate_order" alt="" coords="205,5,360,33"/>
+<area shape="rect" id="node5" href="$curve__settings_8h.html#a1b107bc5b647bc5d3861286fa2d3cc11" title="bls12_generate_prime" alt="" coords="204,55,361,83"/>
+<area shape="rect" id="node7" href="$curve__settings_8h.html#a91443c5d6e5c08599d2c9c0cae6b55c6" title="bls12_generate_trace" alt="" coords="205,106,360,134"/>
+<area shape="rect" id="node9" href="$curve__settings_8h.html#a3f6cf44a99eee03ecb0e8a4bb162c622" title="bls12_generate_X" alt="" coords="216,157,349,185"/>
+<area shape="rect" id="node11" href="$curve__settings_8h.html#a2f976eaec9841301857ffc58c5ffd2d9" title="bls12_set_curve_parameter" alt="" coords="188,207,377,235"/>
+<area shape="rect" id="node13" href="$curve__settings_8h.html#af8fa5f50ee9d77c834f78ec4e1b45c93" title="bls12_weil" alt="" coords="240,258,325,286"/>
+<area shape="rect" id="node15" href="$curve__settings_8h.html#a17764e96f5eacb09c2edc2bf2eeaddeb" title="init_bls12_parameters" alt="" coords="205,309,360,337"/>
+</map>

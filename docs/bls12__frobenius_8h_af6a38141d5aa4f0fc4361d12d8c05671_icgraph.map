@@ -1,0 +1,9 @@
+<map id="bls12_Fp12_frobenius_map_p2" name="bls12_Fp12_frobenius_map_p2">
+<area shape="rect" id="node3" href="$bls12___g3__exp_8h.html#a04349573c89d398f04506a6db9e2c487" title="bls12_2split_G3_exp" alt="" coords="217,5,367,33"/>
+<area shape="rect" id="node7" href="$bls12___g3__exp_8h.html#a9664a6d82c05d087c7e9cf80b657311d" title="bls12_4split_G3_exp" alt="" coords="216,55,368,83"/>
+<area shape="rect" id="node10" href="$bls12__finalexp_8h.html#a7ebeae6dd8ceff07d604ddb47a9cd2a1" title="bls12_finalexp_optimal" alt="" coords="212,106,372,134"/>
+<area shape="rect" id="node16" href="$bls12__finalexp_8h.html#a82823a1827b2e4ee6fca04f570708e8f" title="bls12_finalexp_plain" alt="" coords="219,157,365,185"/>
+<area shape="rect" id="node5" href="$bls12__test__pairings_8h.html#a084d9bc232ef377fb2baa2fdb19686b2" title="bls12_test_G3_exp" alt="" coords="423,30,561,58"/>
+<area shape="rect" id="node12" href="$bls12__pairings_8h.html#a83edc7fcbac2490ab67a1e6f746bdd68" title="bls12_tate" alt="" coords="449,106,535,134"/>
+<area shape="rect" id="node14" href="$bls12__test__pairings_8h.html#aab7376446062228691c95fa9ea45da9b" title="bls12_test_tate_pairing" alt="" coords="612,106,772,134"/>
+</map>

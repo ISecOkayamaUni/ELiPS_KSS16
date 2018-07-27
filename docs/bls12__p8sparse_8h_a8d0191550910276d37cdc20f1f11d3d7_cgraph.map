@@ -1,0 +1,12 @@
+<map id="bls12_Pseudo_8_sparse_mapping" name="bls12_Pseudo_8_sparse_mapping">
+<area shape="rect" id="node3" href="$bn__efp2_8h.html#aaf4ebcd7da9b58a19626739159b1c468" title="EFp2_init" alt="" coords="231,76,308,104"/>
+<area shape="rect" id="node7" href="$bn__fp_8h.html#af102c589736284034064b7c2283000cb" title="Fp_init" alt="" coords="479,25,540,53"/>
+<area shape="rect" id="node9" href="$bn__efp2_8h.html#ab9ebc9caf2c47493f224e70b99d26cba" title="EFp2_set" alt="" coords="229,126,309,154"/>
+<area shape="rect" id="node15" href="$bn__efp_8h.html#a2b1c0fe61a09134e31640f1565a48ed1" title="EFp_init" alt="" coords="359,25,428,53"/>
+<area shape="rect" id="node18" href="$bn__efp_8h.html#abb438750cc5bfec2da8cd2f3863a985f" title="EFp_set" alt="" coords="357,177,429,205"/>
+<area shape="rect" id="node22" href="$bn__fp_8h.html#aed138c92bbb10803bffd0f8eb0c090ce" title="Fp_inv" alt="" coords="239,228,300,256"/>
+<area shape="rect" id="node24" href="$bn__fp_8h.html#a880fb156a0cc84e3483d481f9f22784e" title="Fp_mul" alt="" coords="236,278,303,306"/>
+<area shape="rect" id="node5" href="$bn__fp2_8h.html#a3e3f039eb9b9874e5a4cc30d37f6546c" title="Fp2_init" alt="" coords="359,76,428,104"/>
+<area shape="rect" id="node11" href="$bn__fp2_8h.html#a7d6f34091363334426c45b9e1ee4503c" title="Fp2_set" alt="" coords="359,126,428,154"/>
+<area shape="rect" id="node13" href="$bn__fp_8h.html#ab986f83b75086cf6c3f40105c5ae23b8" title="Fp_set" alt="" coords="479,152,540,180"/>
+</map>

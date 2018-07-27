@@ -1,0 +1,24 @@
+<map id="Fp2_init" name="Fp2_init">
+<area shape="rect" id="node3" href="$bls12__line__ate_8h.html#a052c9a4d331a4f2d9468d3fb4d0d0944" title="bls12_f_ltq" alt="" coords="419,409,504,437"/>
+<area shape="rect" id="node19" href="$bls12__line__ate_8h.html#aef224b31d737d02e09b87597a9aa8664" title="bls12_ff_ltt" alt="" coords="419,359,504,387"/>
+<area shape="rect" id="node23" href="$bls12__p8sparse_8h.html#a12e66a107c192d4b73a29140c2a6d97d" title="bls12_Pseudo_8_sparse_mul" alt="" coords="123,460,325,488"/>
+<area shape="rect" id="node25" href="$bn__efp2_8h.html#aaf4ebcd7da9b58a19626739159b1c468" title="EFp2_init" alt="" coords="185,220,263,248"/>
+<area shape="rect" id="node49" href="$bn__efp2_8h.html#af2a6ca2f6366e7928bfead10a7ea6037" title="EFp2_rational_point" alt="" coords="153,511,295,539"/>
+<area shape="rect" id="node51" href="$bn__bls12__precoms_8h.html#a6d8315d6721fda3d585086b15cf55cd8" title="init_precoms" alt="" coords="175,561,273,589"/>
+<area shape="rect" id="node57" href="$bn__bls12__precoms_8h.html#ac493d3334dc9a69b22270ecfd04393ac" title="set_frobenius_constant" alt="" coords="145,612,303,640"/>
+<area shape="rect" id="node5" href="$bls12__miller__optate_8h.html#a4dd1ea18b9004d2f7dc99fc940dbab12" title="bls12_Miller_algo_for\l_opt_ate" alt="" coords="600,241,749,285"/>
+<area shape="rect" id="node13" href="$bls12__miller__ate_8h.html#a4468c3f6d288607c0e5c7a0912605d51" title="bls12_Miller_algo_for\l_plain_ate" alt="" coords="600,329,749,373"/>
+<area shape="rect" id="node7" href="$bls12__pairings_8h.html#a9fbfb8c58f4bcd4e8eb916a2f9419c2e" title="bls12_opt_ate" alt="" coords="819,195,925,223"/>
+<area shape="rect" id="node9" href="$bls12__test__pairings_8h.html#a084d9bc232ef377fb2baa2fdb19686b2" title="bls12_test_G3_exp" alt="" coords="996,88,1135,116"/>
+<area shape="rect" id="node11" href="$bls12__test__pairings_8h.html#a8764956fa4214ba03988afe867f97f67" title="bls12_test_opt_ate\l_pairing" alt="" coords="997,187,1133,231"/>
+<area shape="rect" id="node15" href="$bls12__pairings_8h.html#ab593751b52dd666d230eff17c637c485" title="bls12_plain_ate" alt="" coords="813,337,931,365"/>
+<area shape="rect" id="node17" href="$bls12__test__pairings_8h.html#a43b4f11c8806b181213808de80c8dc41" title="bls12_test_plain_ate\l_pairing" alt="" coords="992,329,1139,373"/>
+<area shape="rect" id="node27" href="$bls12__scm_8h.html#ac67c5ceeb3131c1f193da9092079d58f" title="bls12_2split_G2_scm" alt="" coords="599,140,751,168"/>
+<area shape="rect" id="node31" href="$bls12__scm_8h.html#a4ba82479d082bed6f2f58f848d771bc7" title="bls12_4split_G2_scm" alt="" coords="597,39,752,67"/>
+<area shape="rect" id="node39" href="$bls12__scm_8h.html#a415bfbd46073fdf9f6af83c8e720a88b" title="bls12_plain_G2_scm" alt="" coords="600,89,749,117"/>
+<area shape="rect" id="node42" href="$bls12__p8sparse_8h.html#a8d0191550910276d37cdc20f1f11d3d7" title="bls12_Pseudo_8_sparse\l_mapping" alt="" coords="375,241,548,285"/>
+<area shape="rect" id="node46" href="$bn__efp2_8h.html#afe4377b41b2b704619c58e2af32bcb7e" title="EFp2_SCM" alt="" coords="416,39,507,67"/>
+<area shape="rect" id="node29" href="$bls12__test__pairings_8h.html#a34dad243bd99737d4c844dfcd658282a" title="bls12_test_G2_scm" alt="" coords="801,89,943,117"/>
+<area shape="rect" id="node53" href="$bls12__inits_8h.html#a4c1a17a7351fa81f018648fe688d79c8" title="bls12_inits" alt="" coords="419,587,504,615"/>
+<area shape="rect" id="node55" href="$bn__inits_8h.html#acc68302a1ac11a5cd72808edd14682ba" title="init_bn" alt="" coords="432,536,491,564"/>
+</map>

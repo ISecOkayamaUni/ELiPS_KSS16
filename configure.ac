@@ -1,10 +1,10 @@
 #Autoconf pre-req version is 2.69
 AC_PREREQ(2.69)
-AC_INIT(FULL-PACKAGE-NAME, VERSION, BUG-REPORT-ADDRESS)
-
+#AC_INIT(FULL-PACKAGE-NAME, VERSION, BUG-REPORT-ADDRESS)
+AC_INIT([elipsbnbls12], [1.0.1])
 #Automake init
-AM_INIT_AUTOMAKE(elipskss16, 1.0.1, no-define)
-AC_CONFIG_SRCDIR([src/ELiPS_EFp.c])
+AM_INIT_AUTOMAKE(elipsbnbls12, 1.0.1, no-define)
+AC_CONFIG_SRCDIR([src/bn_inits.c])
 AC_CONFIG_MACRO_DIRS([m4])
 #Initialize libtool with min ver 2.4
 LT_INIT
