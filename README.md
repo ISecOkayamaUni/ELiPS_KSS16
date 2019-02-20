@@ -17,8 +17,8 @@ This document describes how to make existing ELiPS library working in Linux envi
     `sudo apt-get install autoconf`
 4. Install `libtool` as follows 
     `sudo apt-get install libtool-bin`
-5. git clone `https://github.com/ISecOkayamaUniv/elips_bn_bls12.git`
-6. From terminal enter to `<elips_bn_bls>` directory.
+5. git clone `https://github.com/ISecOkayamaUniv/ELiPS_KSS16.git`
+6. From terminal enter to `<ELiPS_KSS16>` directory.
 7. Run the following commands 
     `autoreconf -i`
 
@@ -35,7 +35,7 @@ The output will be almost as follows
 10. Finally `sudo make install`
 10. To uninstall `sudo make uninstall` from the directory
 
-Still there is no single header. Therefore please `/usr/local/include/ELiPS_bn_bls` directory to get the header declaration. 
+Still there is no single header. Therefore please `/usr/local/include/ELiPS_KSS16` directory to get the header declaration. 
 
 If you face `cannot open shared object file: No such file or directory` while running then follow this steps:
 
